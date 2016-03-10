@@ -1,0 +1,124 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1 {
+	font-family: "Cinzel Decorative", serif;
+	font-weight: bold;
+	margin:0;
+	font-size: 36px;
+}
+
+
+
+body {
+	font-family: "Questrial", sans-serif;
+	background: url("images/sylvanas.jpg") no-repeat;
+	background-size: cover;
+	background-position: 100%;
+	color: #B2C4D1;
+	background-attachment:fixed;
+}
+
+a {
+	color: #B2C4D1;
+}
+
+a:hover {
+	color: #E8A4A4;
+}
+
+html, body {
+	height:100%;
+	margin:0;
+}
+
+.overlay {
+	min-height:100%;
+	background: rgba(0,0,0,.7);
+}
+
+.container {
+	margin:auto;
+	text-align:center;
+	padding-top:2rem;
+}
+
+blockquote {
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  line-height:1.5;
+  font-size: 18px;
+	width: 287px;
+	margin: 4.5rem auto;
+}
+blockquote:before, blockquote:after {
+  color: #9C0510;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+  font-family: "Old Standard TT", serif;
+}
+
+blockquote:before {
+	content: open-quote;
+	font-size: 4em;
+	margin-left: -39px;
+	margin-right: 5px;
+}
+
+blockquote:after {
+  content: close-quote;
+  font-size:2em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+audio {
+	width:100%;
+	max-width:400px;
+}
+
+.break {
+	display:block;
+}
+
+p {
+	margin-bottom:0;
+}
+
+audio {
+	margin:1rem 0;
+}
+
+@media (min-width:768px) {
+	.container {
+		padding-top:3rem;
+	}
+
+	h1 {
+		font-size: 72px;
+	}
+
+	blockquote {
+	font-size: 24px;
+	margin: 6rem auto;
+	}
+	
+}
+
+@media (min-width: 1025px) {
+	h1 {
+		font-size: 100px;
+	}
+
+	blockquote {
+		width: 500px;
+	}
+}
